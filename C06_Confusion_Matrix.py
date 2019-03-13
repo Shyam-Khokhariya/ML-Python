@@ -29,36 +29,13 @@ plt.pause(2)
 plt.close()
 
 
-# for i in range(y_test.shape[0]):
-#     if y_test[i]=='B':
-#         y_test[i]=1
-#     else:
-#         y_test[i] = 2
-# for i in range(y_pred.shape[0]):
-#     if y_pred[i]=='B':
-#         y_pred[i]=1
-#     else:
-#         y_pred[i] = 2
-# for i in range(y_train.shape[0]):
-#     if y_train[i]=='B':
-#         y_train[i]=1
-#     else:
-#         y_train[i] = 2
-
-
-############################ Doubt ##################################
-'''
-
 
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score,f1_score
-print("Precision : %.3f"%precision_score(y_true=y_test,y_pred=y_pred,pos_label=0))
-print("Recall : %.3f"%recall_score(y_test,y_pred))
-print("f1 Score : %.3f"%f1_score(y_test,y_pred))
+print("Precision : %.3f"%precision_score(y_true=y_test,y_pred=y_pred,pos_label='M'))
+print("Recall : %.3f"%recall_score(y_test,y_pred,pos_label='M'))
+print("f1 Score : %.3f"%f1_score(y_test,y_pred,pos_label='M'))
 
-
-'''
-#####################################################################
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import make_scorer,f1_score
