@@ -18,3 +18,4 @@ C_13. Parallelizing Neural Network Training with TensorFlow
 C_14. Going Deeper – The Mechanics of TensorFlow
 C_15. Classifying Images with Deep Convolutional Neural Networks
 C_16. Modeling Sequential Data Using Recurrent Neural Networks
+
